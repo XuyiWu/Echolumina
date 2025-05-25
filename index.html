@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>我的旅游相册</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f2f2f2;
+    }
+
+    header {
+      background-color: #2b6cb0;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #3182ce;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 8px;
+      background-color: #2c5282;
+    }
+
+    nav a:hover {
+      background-color: #63b3ed;
+    }
+
+    section {
+      padding: 40px 20px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #2d3748;
+      margin-bottom: 20px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .gallery img,
+    .gallery video {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #e2e8f0;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>我的旅游相册</h1>
+  <p>记录世界之旅的点滴</p>
+</header>
+
+<nav>
+  <a href="#japan">日本</a>
+  <a href="#europe">欧洲</a>
+  <a href="#australia">澳大利亚</a>
+</nav>
+
+<!-- 日本分区 -->
+<section id="japan">
+  <h2>🇯🇵 日本</h2>
+  <div class="gallery">
+    <img src="photos/japan_temple.jpg" alt="京都神社">
+    <img src="photos/japan_sakura.jpg" alt="东京樱花">
+    <video controls>
+      <source src="videos/japan_food.mp4" type="video/mp4">
+    </video>
+  </div>
+</section>
+
+<!-- 欧洲分区 -->
+<section id="europe">
+  <h2>🇪🇺 欧洲</h2>
+  <div class="gallery">
+    <img src="photos/europe_paris.jpg" alt="巴黎铁塔">
+    <img src="photos/europe_venice.jpg" alt="威尼斯水道">
+    <video controls>
+      <source src="videos/europe_trip.mp4" type="video/mp4">
+    </video>
+  </div>
+</section>
+
+<!-- 澳大利亚分区 -->
+<section id="australia">
+  <h2>🇦🇺 澳大利亚</h2>
+  <div class="gallery">
+    <img src="photos/aus_sydney.jpg" alt="悉尼歌剧院">
+    <img src="photos/aus_beach.jpg" alt="黄金海岸">
+    <video controls>
+      <source src="videos/aus_koala.mp4" type="video/mp4">
+    </video>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 我的旅游记忆 | 版权所有
+</footer>
+
+</body>
+</html>
