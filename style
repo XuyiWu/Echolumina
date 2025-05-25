@@ -1,0 +1,143 @@
+/* 通用设置 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "STKaiti", "KaiTi", "仿宋", serif;
+  background-color: #f9f5e3;
+  background-image: url('photos/background_texture.jpg'); /* 水墨背景纹理可自定义 */
+  background-size: cover;
+  background-attachment: fixed;
+  color: #3e3e3e;
+  line-height: 1.8;
+}
+
+/* 页眉 */
+header {
+  background: url('photos/header_ink.png') no-repeat center bottom;
+  background-size: cover;
+  padding: 50px 20px 40px;
+  text-align: center;
+  border-bottom: 2px solid #ccc;
+}
+
+header h1 {
+  font-size: 3em;
+  color: #4b3b2b;
+  text-shadow: 1px 1px #eae0c2;
+}
+
+header p {
+  font-size: 1.2em;
+  color: #6b4e36;
+  margin-top: 10px;
+}
+
+/* 导航栏 */
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 12px 0;
+  border-top: 1px solid #d2c2a9;
+  border-bottom: 1px solid #d2c2a9;
+}
+
+nav a {
+  text-decoration: none;
+  color: #5b3a29;
+  font-weight: bold;
+  padding: 6px 16px;
+  border-radius: 8px;
+  background: #f6efe1;
+  border: 1px solid #b6a188;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background: #d8c9a3;
+  color: #8b2e1a;
+}
+
+/* 主体区 */
+section {
+  padding: 50px 20px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2em;
+  color: #7c5533;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+h2::after {
+  content: "❀";
+  position: absolute;
+  right: -30px;
+  top: 0;
+  font-size: 1.2em;
+  color: #c9603d;
+}
+
+/* 图片/视频廊 */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.gallery a {
+  text-align: center;
+  text-decoration: none;
+  color: #3e3e3e;
+}
+
+.gallery img,
+.gallery video {
+  width: 100%;
+  border-radius: 16px;
+  border: 1px solid #d4c8ae;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover,
+.gallery video:hover {
+  transform: scale(1.05);
+}
+
+.gallery p {
+  margin-top: 8px;
+  font-size: 1em;
+  color: #5e422a;
+}
+
+/* 页脚 */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.6);
+  color: #6b5847;
+  font-size: 0.9em;
+  border-top: 1px solid #cfc3a9;
+}
+
+/* 古风装饰背景（可选） */
+body::before {
+  content: "";
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  height: 300px;
+  background-image: url('photos/decoration_meihua.png'); /* 梅花装饰角图 */
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+  pointer-events: none;
+  z-index: -1
